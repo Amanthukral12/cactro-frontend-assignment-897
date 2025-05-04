@@ -1,7 +1,7 @@
-import "./App.css";
+import StoryViewer from "./pages/StoryViewer";
 
 function App() {
-  return <div className="text-2xl">Hello World</div>;
+  return <StoryViewer />;
 }
 
 export default App;

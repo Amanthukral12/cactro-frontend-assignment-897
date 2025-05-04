@@ -54,8 +54,9 @@ const StoryViewer = () => {
         <>
           <ThumbnailBar stories={stories} onSelect={openStory} />
           <img
-            src="/stories/1.jpg"
+            src="/stories/feed.jpg"
             className="w-full max-w-xs mt-4 rounded-lg object-cover"
+            alt="Feed preview"
           />
         </>
       ) : (

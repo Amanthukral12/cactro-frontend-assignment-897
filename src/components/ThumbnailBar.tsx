@@ -11,7 +11,7 @@ const ThumbnailBar = ({ stories, onSelect }: Props) => {
         <img
           key={story.id}
           src={story.imageUrl}
-          alt="story thumbnail"
+          alt={`Story ${index + 1}`}
           onClick={() => onSelect(index)}
           className="h-16 w-16 rounded-full object-cover cursor-pointer flex-shrink-0 border-2 border-pink-500"
         />

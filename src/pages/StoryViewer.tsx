@@ -46,7 +46,7 @@ const StoryViewer = () => {
   }, [current]);
   return (
     <div
-      className={`flex flex-col items-center h-screen w-full p-2 ${
+      className={`flex flex-col items-center h-screen w-full ${
         current !== null ? "p-0" : ""
       }`}
     >

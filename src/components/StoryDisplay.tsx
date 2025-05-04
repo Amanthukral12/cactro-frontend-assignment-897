@@ -15,11 +15,16 @@ const StoryDisplay = ({ imageUrl, loading, onClick }: Props) => {
     else onClick("right");
   };
   return (
-    <div>
+    <div className="relative h-full w-full bg-black overflow-hidden">
       {loading ? (
         <Loading />
       ) : (
-        <img src={imageUrl} alt="Story" onClick={handleClick} />
+        <img
+          src={imageUrl}
+          alt="Story"
+          onClick={handleClick}
+          className="w-full h-full object-cover"
+        />
       )}
     </div>
   );
